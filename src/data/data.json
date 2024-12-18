@@ -1,0 +1,60 @@
+{
+  "classrooms": [
+    { "id": 1, "name": "Class 1", "sections": ["A", "B"] },
+    { "id": 2, "name": "Class 2", "sections": ["A", "B"] }
+  ],
+  "students": {
+    "1": {
+      "A": [
+        { "id": "S101", "name": "Padma", "subject": "Kannada" },
+        { "id": "S102", "name": "Chaithra", "subject": "Maths" }
+      ],
+      "B": [
+        { "id": "S103", "name": "Basu", "subject": "Science" }
+      ]
+    },
+    "2": {
+      "A": [
+        { "id": "S201", "name": "Gayi", "subject": "Kannada" },
+        { "id": "S202", "name": "Geetha", "subject": "Maths" }
+      ],
+      "B": [
+        { "id": "S203", "name": "Chandrika", "subject": "Science" }
+      ]
+    }
+  },
+  "assignments": [
+    { "id": 1, "title": "Math Homework", "dueDate": "2024-12-15", "subject": "Maths", "studentId": "S102" },
+    { "id": 2, "title": "Science Project", "dueDate": "2024-12-20", "subject": "Science", "studentId": "S103" }
+  ],
+  "submissions": {
+    "1": {
+      "S101": { "submitted": true },
+      "S102": { "submitted": false }
+    },
+    "2": {
+      "S201": { "submitted": false },
+      "S202": { "submitted": true }
+    }
+  },
+  "attendance": {
+    "1": {
+      "A": [
+        { "id": "S101", "name": "Padma", "attendance": { "Day 1": "Present", "Day 2": "Absent" } },
+        { "id": "S102", "name": "Chaithra", "attendance": { "Day 1": "Present", "Day 2": "Present" } }
+      ],
+      "B": [
+        { "id": "S103", "name": "Basu", "attendance": { "Day 1": "Absent", "Day 2": "Present" } }
+      ]
+    },
+    "2": {
+      "A": [
+        { "id": "S201", "name": "Gayi", "attendance": { "Day 1": "Present", "Day 2": "Absent" } },
+        { "id": "S202", "name": "Geetha", "attendance": { "Day 1": "Absent", "Day 2": "Present" } }
+      ],
+      "B": [
+        { "id": "S203", "name": "Chandrika", "attendance": { "Day 1": "Present", "Day 2": "Absent" } }
+      ]
+    }
+  }
+}

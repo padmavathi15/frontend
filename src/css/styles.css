@@ -1,0 +1,333 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('/images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section .highlight {
+    color: #f0ad4e;
+    font-weight: bold;
+}
+
+/* Navbar Customization */
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.nav-link{
+    font-weight: bold;
+}
+
+/* Remove shadow from navbar */
+.navbar {
+    box-shadow: none !important;
+    transition: background-color 0.3s ease;
+}
+
+/* Default navbar background color */
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+}
+
+/* Change navbar background on hover of nav-link */
+.navbar-nav .nav-link:hover {
+    background-color: transparent; /* Remove background from the link itself */
+}
+
+.navbar-nav:hover ~ .navbar {
+    background-color: #7F00FF; /* Light purple when hovering over any link */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Optional for smooth hover on links */
+.nav-link {
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+/* Login button styles */
+.btn {
+    background-color: #7F00FF;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #BF40BF;
+    color: white;
+}
+
+
+
+.login-page {
+    display: flex;
+    height: 100vh;
+}
+
+.left-half {
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.portal-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.portal-container h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.portal-container button {
+    width: 100%;
+}
+
+.right-half {
+    width: 50%;
+    background: url('/images/login-background.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.background-overlay h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.background-overlay p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.card .text-primary {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card .text-primary:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Customization */
+.sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    background-color: #343a40;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar a {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #495057;
+}
+
+/* Main Content Enhancements */
+main {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh; /* Full height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .sidebar ul li {
+    padding: 10px 0;
+  }
+  
+  .sidebar ul li a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+  }
+  
+  .main-content {
+    margin-left: 240px; /* Adjust for sidebar width */
+  }
+  
+  /* Adjust for small screens */
+  @media (max-width: 767px) {
+    .sidebar {
+      position: relative;
+      height: auto;
+    }
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Navbar Customization */
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1050;
+    width: 100%;
+    background-color: #f8f9fa; /* Light background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand img {
+    border-radius: 50%;
+  }
+  
+  .nav-link {
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: transparent;
+  }
+  
+  .btn {
+    background-color: #7f00ff;
+    color: white;
+    border: none;
+  }
+  
+  .btn:hover {
+    background-color: #bf40bf;
+    color: white;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    position: sticky;
+    top: 60px; /* Account for navbar height */
+    height: calc(100vh - 60px); /* Full height minus navbar */
+    padding-top: 20px;
+  }
+  
+  .sidebar a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+  }
+  
+  /* Main Content */
+  .main-content {
+    margin-left: 250px; /* Sidebar width */
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    padding-top: 60px; /* Account for navbar height */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static;
+      height: auto;
+      width: 100%;
+    }
+  
+    .main-content {
+      margin-left: 0;
+    }
+  }
+  /* Custom hover effect for sidebar buttons */
+.sidebar-button:hover {
+    background-color: #007bff !important; /* Blue background */
+    color: white !important; /* White text */
+  }
+  

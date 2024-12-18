@@ -1,0 +1,35 @@
+/* Navbar Custom Styles */
+.custom-navbar {
+    padding: 5px 10px; /* Decrease padding to make navbar smaller */
+    font-size: 14px; 
+    height: 100px;/* Decrease font size */
+  }
+  
+  .custom-navbar .navbar-brand {
+    font-size: 16px; /* Adjust brand font size */
+  }
+  
+  .custom-navbar .form-control {
+    font-size: 14px; /* Adjust search bar font size */
+  }
+  
+  .custom-navbar .nav-link {
+    font-size: 14px; /* Adjust notification icon font size */
+  }
+  
+  .custom-navbar .navbar-text {
+    font-size: 14px; /* Adjust teacher ID and name font size */
+  }
+  
+  .custom-navbar .btn {
+    font-size: 14px; /* Adjust logout button font size */
+  }
+  
+  .custom-search-bar {
+    width: 150px; /* Decrease search bar width */
+  }
+  
+  .custom-btn {
+    padding: 5px 10px; /* Adjust padding for the button */
+  }
+  

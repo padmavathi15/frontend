@@ -1,0 +1,15 @@
+-- Marks table
+CREATE TABLE marks (
+  student_id SERIAL PRIMARY KEY,
+  student_name VARCHAR(100),
+  subject_name VARCHAR(100),
+  marks INTEGER
+);
+
+-- Attendance table
+CREATE TABLE attendance (
+  student_id SERIAL PRIMARY KEY,
+  student_name VARCHAR(100),
+  attendance VARCHAR(50),
+  percentage DECIMAL(5, 2)
+);
